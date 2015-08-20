@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Hugo Materialized"
+license = "MIT"
+licenselink = "https://github.com/jchatkinson/hugo-materialized/blob/master/LICENSE.md"
+description = "a minimal blog theme based on the MaterializeCSS library"
+homepage = "https://github.com/jchatkinson/hugo-materialized/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.13
+
+[author]
+  name = "Jeremy Atkinson"
+  homepage = "jatkinson.me"
