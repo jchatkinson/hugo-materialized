@@ -1,9 +1,9 @@
 +++
-title = "New Post"
-subtitle = ""
+title = ""
 Description = ""
-Tags = []
-Categories = []
+Tags = ["Project"]
+Categories = ["Project"]
+CardImage = "/images/quizzer.png"
 [Author]
     name = "Jeremy Atkinson"
     description = "Structural Engineer-in-training, autodidact programmer, and writer of stuff"

@@ -18,7 +18,20 @@ header, main, footer {
 .social-box {
 
 }
+.button-space-left {
+    margin-left: 50px;
+}
+.margin-left-50 {
+    margin-left: 50px;
+}
+.margin-right-50 {
+    margin-left: 50px;
+}
 
 #headshot {
     max-width: 75%;
+}
+
+.italic {
+    font-style: italic;
 }

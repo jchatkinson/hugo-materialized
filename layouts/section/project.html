@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+
+<h3>My Current and Past Projects:</h3>
+
+{{ range .Data.Pages }}
+{{ if eq .Type "project" }}
+
+<!-- Responsive Cards for each project -->
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{ .Params.CardImage }}">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- List of projects -->
+<!-- 
+<div class="section">
+    <h5><a class="black-text" href="{{ .Permalink }}">{{ .Title }}</a></h5> 
+    <b><a class="black-text" href="{{ .Params.author.website }}">{{ .Params.author.name }}</a></b>
+    <br>{{ .Date.Format "Mon, Jan 2, 2006" }}
+    <blockquote>{{ .Summary }}</blockquote>
+    <a href="{{ .Permalink }}" class="grey-text text-darken-3 waves-effect waves-light btn-flat"><span>Read More</span></a>
+</div>
+<div class="divider"></div>
+-->
+
+
+{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

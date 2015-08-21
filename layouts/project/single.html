@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<div>
+    <h1>{{ .Title }}</h1>
+    <h5>{{ .Date.Format "Mon, Jan 2, 2006" }}</h5>
+    <p>{{ .Content }}</p>
+</div>   
+
+<div class="divider"></div>
+<div class="section">
+{{ partial "socialshare.html" . }}
+</div>
+<div class="divider"></div>
+<h6><a class="black-text" href="/projects/">Back to all projects</a></h6>
+
+
+{{ partial "footer.html" . }}

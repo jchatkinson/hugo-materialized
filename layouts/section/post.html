@@ -1,31 +1,18 @@
 {{ partial "header.html" . }}
 
-{{ range first 8 .Data.Pages }}
+<h3>All my posts:</h3>
+
+{{ range .Data.Pages }}
 {{ if eq .Type "post" }}
 <div class="section">
     <h5><a class="black-text" href="{{ .Permalink }}">{{ .Title }}</a></h5> 
     <b><a class="black-text" href="{{ .Params.author.website }}">{{ .Params.author.name }}</a></b>
     <br>{{ .Date.Format "Mon, Jan 2, 2006" }}
-    <blockquote>{{ .Summary }}</blockquote>
+<!--    <blockquote>{{ .Summary }}</blockquote>-->
     <a href="{{ .Permalink }}" class="grey-text text-darken-3 waves-effect waves-light btn-flat"><span>Read More</span></a>
 </div>
 <div class="divider"></div>
 {{ end }}
 {{ end }}
-
-<div class="section">
-        <h5 class="center-align"><a href="{{ .Permalink }}" class="grey-text text-darken-4 waves-effect waves-light">See all posts</a></h5>
-</div>
-<div class="divider"></div>
-
-
-<!--
- <h1>Pages</h1>
-    {{ range .Data.Pages }}
-    {{ if eq .Type "page" }}
-    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3> 
-    {{ end }}
-    {{end}}   
-    -->
 
 {{ partial "footer.html" . }}

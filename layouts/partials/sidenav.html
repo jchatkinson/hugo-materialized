@@ -1,17 +1,20 @@
 <!-- Sweet side nav, bro! -->
 <div id="slide-out" class="side-nav fixed">
+{{ if .Site.Params.sidenav }}
 <div class ="valign-wrapper">
-        <img id="headshot" src="images/headshot.jpg" alt="profile picture" class="circle responsive-img"> 
-    <p>Jeremy Atkinson</p>
+        <img id="headshot" src="{{ .Site.Params.sidenav }}" alt="profile picture" class="circle responsive-img"> 
+    <p>{{ .Site.Params.author }}</p>
 </div>
+ {{ end }}
+    
+    
 <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/">Archive</a></li>
+    <li><a href="/post/">Archive</a></li>
     <li><a href="/bio/">Bio</a></li>    
-    <li><a href="/projects/">Projects</a></li>    
+    <li><a href="/project/">Projects</a></li>    
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     
- <a class="btn-floating btn-large waves-effect waves-light red"><i class="large material-icons valign-wrapper">keyboard_arrow_right</i></a>
+ <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large red"><i class="fa fa-4x fa-angle-double-left"></i></a>
     
 </div>
