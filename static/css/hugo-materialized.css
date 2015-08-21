@@ -14,3 +14,11 @@ header, main, footer {
       padding-left: 0;
     }
   }
+
+.social-box {
+
+}
+
+#headshot {
+    max-width: 75%;
+}

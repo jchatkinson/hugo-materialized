@@ -1,19 +1,26 @@
 {{ partial "header.html" . }}
 
-<h1>Posts</h1>
-    {{ range first 10 .Data.Pages }}
-    {{ if eq .Type "post" }}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1> 
-    {{ end }}
-    {{end}}
+{{ range first 10 .Data.Pages }}
+{{ if eq .Type "post" }}
+<div class="section">
+    <h5><a class="black-text" href="{{ .Permalink }}">{{ .Title }}</a></h5> 
+    <b>{{ .Params.author }}</b>
+    <br>{{ .Date.Format "02 January 2015" }}
+    <blockquote>{{ .Summary }}</blockquote>
+    <a class="waves-effect waves-light btn">Read More</a>
+</div>
+<div class="divider"></div>
+{{ end }}
+{{end}}
+
+<!--
  <h1>Pages</h1>
     {{ range .Data.Pages }}
     {{ if eq .Type "page" }}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1> 
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3> 
     {{ end }}
     {{end}}   
-    
-    <p>some text</p>
+    -->
 
 
 
