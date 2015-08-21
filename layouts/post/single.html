@@ -1,9 +1,11 @@
 {{ partial "header.html" . }}
 
-      <h1>{{ .Title }}</h1>
-      <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
-      {{ .Content }}
-        
+<div>
+    <h3>{{ .Title }}</h3>
+    <h5>{{ .Date.Format "Mon, Jan 2, 2006" }}</h5>
+    <p>{{ .Content }}</p>
+</div>   
     
+
     
 {{ partial "footer.html" . }}
