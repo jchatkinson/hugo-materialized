@@ -9,29 +9,35 @@ header, main, footer {
     padding-left: 240px;
   }
 
-  @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
     header, main, footer {
       padding-left: 0;
     }
   }
 
-.social-box {
-
+.social-buttons {
+    display: inline-block !important;
 }
-.button-space-left {
-    margin-left: 50px;
-}
-.margin-left-50 {
-    margin-left: 50px;
-}
-.margin-right-50 {
-    margin-left: 50px;
+.social-share-margin {
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
-#headshot {
-    max-width: 75%;
+#sidenav-photo {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+    margin-top: 10px;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #eee;
+    border: 2px solid #eee;
 }
 
 .italic {
-    font-style: italic;
+    font-style: italic !important;
+}
+
+.z-above-all {
+    z-index: 1000 !important;
 }

@@ -1,12 +1,19 @@
 <!-- Sweet side nav, bro! -->
 <div id="slide-out" class="side-nav fixed">
-{{ if .Site.Params.sidenav }}
-<div class ="valign-wrapper">
-        <img id="headshot" src="{{ .Site.Params.sidenav }}" alt="profile picture" class="circle responsive-img"> 
-    <p>{{ .Site.Params.author }}</p>
-</div>
- {{ end }}
     
+<div>
+    <div class="center-align">
+        {{ if .Site.Params.sidenav }}
+        <div>
+            <img id="sidenav-photo" src="{{ .Site.Params.sidenav }}" alt="sidenav picture" class="circle responsive-img"> 
+        </div>
+         {{ end }}
+        <p>{{ .Site.Params.name }}</p>
+
+        {{ partial "socialbox.html" . }}
+        </div>
+    <div id="menu-collapser-holder" class="divider"></div>
+</div>
     
 <ul>
     <li><a href="/">Home</a></li>
@@ -14,7 +21,9 @@
     <li><a href="/bio/">Bio</a></li>    
     <li><a href="/project/">Projects</a></li>    
   </ul>
-    
- <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large red"><i class="fa fa-4x fa-angle-double-left"></i></a>
-    
+
+<!--    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
 </div>
+
+
+<!--     <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large red"><i class="fa fa-angle-double-left"></i></a>-->
