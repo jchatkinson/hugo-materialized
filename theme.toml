@@ -6,10 +6,11 @@ license = "MIT"
 licenselink = "https://github.com/jchatkinson/hugo-materialized/blob/master/LICENSE.md"
 description = "a simple theme to show your bio, blog, and projects - based on the MaterializeCSS library"
 homepage = "https://github.com/jchatkinson/hugo-materialized/"
-tags = ["blog", "projects"]
-features = ["blog", "project showcase", "profile"]
+tags = ["blog", "projects","portfolio","MaterializeCSS","Material Design"]
+features = ["blog", "project showcase", "portfolio", "profile","responsive","Material Design"]
 min_version = 0.13
 
 [author]
   name = "Jeremy Atkinson"
   homepage = "jatkinson.me"
+  email = "jeremy@jatkinson.me"
