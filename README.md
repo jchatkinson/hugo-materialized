@@ -3,6 +3,10 @@ Clean and simple blog/portfolio theme for hugo. The theme is  based on [Material
 
 This is my first project working with hugo, and programming in general, so I am sure that there are improvements to be made. Please feel free to contribute to this theme.
 
+### To Do
+- Add screenshots here and in `/images/`
+- Create a demo website in `/examplesite/` and on gh-pages
+
 ### Install this theme
 To install hugo-materialized, make a `themes` directory in your working direction
 ```
