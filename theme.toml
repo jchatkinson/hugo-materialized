@@ -1,13 +1,13 @@
-# theme.toml template for a Hugo theme
+# theme.toml template for a Hugo-Materialized
 # See http://jatkinson.me for an example
 
-name = "Hugo Materialized"
+name = "Hugo-Materialized"
 license = "MIT"
 licenselink = "https://github.com/jchatkinson/hugo-materialized/blob/master/LICENSE.md"
-description = "a minimal blog theme based on the MaterializeCSS library"
+description = "a simple theme to show your bio, blog, and projects - based on the MaterializeCSS library"
 homepage = "https://github.com/jchatkinson/hugo-materialized/"
-tags = ["", ""]
-features = ["", ""]
+tags = ["blog", "projects"]
+features = ["blog", "project showcase", "profile"]
 min_version = 0.13
 
 [author]

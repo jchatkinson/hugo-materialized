@@ -19,10 +19,15 @@
       <p>{{ .Description }}</p>
     </div>
     <div class="card-action">
-      <a href="{{ .Permalink }}">More Detail</a>
+        <a href="{{ .Permalink }}">Details</a>
+        <!-- only show if a repolink is present in the front matter -->
+        {{ if .Params.repolink }}
+        <a href="{{ .Params.repolink }}" >Code</a>
+        {{ end }}
     </div>
   </div>
 </div>
+    
 <!-- Simple List of projects -->
 <!-- 
 <div class="section">

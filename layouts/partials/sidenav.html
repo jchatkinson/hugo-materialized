@@ -1,29 +1,38 @@
+<!-- Add a top nav bar with hamburger button if on small screens -->
+  <div class="navbar-fixed hide-on-large-only">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="menu-icon fa fa-bars"></i></a>
+      </div>
+    </nav>
+  </div>
+
+
 <!-- Sweet side nav, bro! -->
 <div id="slide-out" class="side-nav fixed">
-    
-<div>
-    <div class="center-align">
-        {{ if .Site.Params.sidenav }}
-        <div>
-            <img id="sidenav-photo" src="{{ .Site.Params.sidenav }}" alt="sidenav picture" class="circle responsive-img"> 
+
+    <div>
+        <div class="center-align">
+            {{ if .Site.Params.sidenav }}
+            <div>
+                <img id="sidenav-photo" src="{{ .Site.Params.sidenav }}" alt="sidenav picture" class="circle responsive-img"> 
+            </div>
+             {{ end }}
+            <p>{{ .Site.Params.name }}</p>
+
+            {{ partial "socialbox.html" . }}
         </div>
-         {{ end }}
-        <p>{{ .Site.Params.name }}</p>
-
-        {{ partial "socialbox.html" . }}
-        </div>
-    <div id="menu-collapser-holder" class="divider"></div>
-</div>
+    <div class="divider"></div>
     
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/post/">Archive</a></li>
-    <li><a href="/bio/">Bio</a></li>    
-    <li><a href="/project/">Projects</a></li>    
-  </ul>
+    </div>
 
-<!--    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
+  
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/post/">Archive</a></li>
+                    <li><a href="/bio/">Bio</a></li>    
+                    <li><a href="/project/">Projects</a></li>    
+                </ul>
+           </div>
 </div>
-
-
-<!--     <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large red"><i class="fa fa-angle-double-left"></i></a>-->

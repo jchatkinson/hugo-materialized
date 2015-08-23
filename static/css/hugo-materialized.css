@@ -23,21 +23,23 @@ header, main, footer {
     margin-right: 12px;
 }
 
+i.menu-icon {
+    line-height: inherit;
+    height: inherit;
+}
+
 #sidenav-photo {
     height:100px;
     width:100px;
     border-radius:50%;
     overflow:hidden;
     margin:auto;
-    margin-top: 10px;
-    box-shadow: 0 0 0 3px white, 0 0 0 5px #eee;
-    border: 2px solid #eee;
+    margin-top: 20px;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #e0e0e0;
+    border: 2px solid #e0e0e0;
+
 }
 
 .italic {
     font-style: italic !important;
-}
-
-.z-above-all {
-    z-index: 1000 !important;
 }

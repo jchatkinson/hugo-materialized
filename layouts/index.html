@@ -1,20 +1,20 @@
-{{ partial "header.html" . }}
-
-{{ range first 8 .Data.Pages }}
-{{ if eq .Type "post" }}
-<div class="section">
-    <h5><a class="black-text" href="{{ .Permalink }}">{{ .Title }}</a></h5> 
-    <b><a class="black-text" href="{{ .Params.author.website }}">{{ .Params.author.name }}</a></b>
-    <br>{{ .Date.Format "Mon, Jan 2, 2006" }}
-    <blockquote>{{ .Summary }}</blockquote>
-    <a href="{{ .Permalink }}" class="grey-text text-darken-3 waves-effect waves-light btn-flat"><span>Read More</span></a>
-</div>
-<div class="divider"></div>
+{{ partial "header.html" . }} 
+{{ range first 6 (where .Site.Pages "Section" "post") }} 
+    {{ if eq .Type "post" }}
+        <div class="section">
+            <h4><a class="black-text" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+            <h5 class="grey-text text-darken-3">{{ .Params.subtitle }}</h5>
+            <b><a class="black-text" href="{{ .Params.author.website }}">{{ .Params.author.name }}</a></b>
+            <br>{{ .Date.Format "Mon, Jan 2, 2006" }}
+            <blockquote>{{ .Summary }}</blockquote>
+            <a href="{{ .Permalink }}" class="grey-text text-darken-3 waves-effect waves-light btn-flat"><span>Read More</span></a>
+        </div>
+        <div class="divider"></div>
+    {{ end }} 
 {{ end }}
-{{ end }}
 
 <div class="section">
-        <h5 class="center-align"><a href="/post/" class="grey-text text-darken-4 waves-effect waves-light">See all posts</a></h5>
+    <h5 class="center-align"><a href="/post/" class="grey-text text-darken-4 waves-effect waves-light">See all posts</a></h5>
 </div>
 <div class="divider"></div>
 

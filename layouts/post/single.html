@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <div>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ title .Title }}</h1>
     {{ if .Params.subtitle }}
     <h4 class="italic grey-text text-darken-2 ">{{ .Params.subtitle }}</h4>
     {{ end }}
@@ -9,7 +9,7 @@
     <p>{{ .Content }}</p>
 </div>   
 
-{{ if eq .Type "post" }}
+
 <div class="section">
     <b><a class="black-text" href={{ .Params.author.website }}>{{ .Params.author.name }}</a></b>
     <p class="italic grey-text text-darken-3">{{ .Params.author.description }}</p>
@@ -18,6 +18,6 @@
 <div class="section">
 {{ partial "socialshare.html" . }}
 </div>
-{{ end }}
+<div class="divider"></div>
 
 {{ partial "footer.html" . }}

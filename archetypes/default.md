@@ -1,6 +1,5 @@
 +++
 
 description = ""
-slug = "bio"
 
 +++

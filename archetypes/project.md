@@ -1,18 +1,19 @@
 +++
-title = ""
-Description = ""
+title = "My Project Title"
+Description = "Description of the sample project"
 Tags = ["Project"]
 Categories = ["Project"]
 CardImage = "https://unsplash.it/200/300/?blur"
-repolink = "http://github.com"
+repolink = "http://github.com/sampleproject"
+weblink = "http://github.com/sampleproject"
 
 [Author]
-    name = "Jeremy Atkinson"
-    description = "Structural Engineer-in-training, autodidact programmer, and writer of stuff"
-    website = "http://jatkinson.me/bio/"
-    email = "jeremy@jatkinson.me"
-    twitter = "Jeremy_Atkinson"
-    github = "https://github.com/jchatkinson/"
+    name = "Johnny Doe"
+    description = "international man of mystery"
+    website = "http://example.com"
+    email = "jd@example.com"
+    twitter = "john_doe"
+    github = "https://github.com/johnnydoe/"
 
 +++
 
